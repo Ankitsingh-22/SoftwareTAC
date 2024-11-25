@@ -9,6 +9,7 @@ import Feature from './components/Feature'
 import Cards from './components/Cards.jsx'
 import Footer from './components/Footer.jsx'
 import LocomotiveScroll from 'locomotive-scroll';
+import ContactUs from './components/ContactUs.jsx'
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -24,6 +25,7 @@ function App() {
     <Eyes />
     <Feature />
     <Cards/>
+    <ContactUs />
     <Footer/>
     </div>
     </>
