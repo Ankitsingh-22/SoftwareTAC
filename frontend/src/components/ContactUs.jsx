@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import bgVideo from "../../assets/animated_contact_us.mp4";
 
 const apiUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 
@@ -93,7 +94,7 @@ function ContactUs() {
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/assets/animated_contact_us.mp4"
+        src={bgVideo}
         autoPlay
         loop
         muted
