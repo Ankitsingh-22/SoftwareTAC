@@ -9,7 +9,7 @@ function Landing() {
   }, []);
 
   return (
-    <div className="w-full h-screen relative bg-gradient-to-b from-black  to-black overflow-hidden">
+    <div id="home" className="w-full h-screen relative bg-gradient-to-b from-black to-black overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0">
         <video
@@ -44,15 +44,6 @@ function Landing() {
           </button>
         </div>
       </div>
-
-      {/* Scroll Indicator
-      <div
-        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white text-sm animate-bounce"
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        Scroll Down
-      </div> */}
     </div>
   );
 }

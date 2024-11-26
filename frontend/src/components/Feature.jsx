@@ -17,14 +17,14 @@ function Featured() {
     };
 
     return (
-        <div className="w-full py-20">
+        <div id="work"  className="w-full py-20">
             {/* Featured Projects Header */}
-            <div className="w-full px-[4.5vw] border-b-[1px] border-zinc-700 pb-10">
+            <div  className="w-full px-[4.5vw] border-b-[1px] border-zinc-700 pb-10">
                 <h1 className="text-[4vw] tracking-tighter">Featured Projects</h1>
             </div>
 
             {/* Featured Projects - Talent Connect and Industries Served */}
-            <div className="cards w-full flex gap-[4vw] pt-[6vw] px-[4.5vw]">
+            <div  className="cards w-full flex gap-[4vw] pt-[6vw] px-[4.5vw]">
                 {/* Talent Connect Project Card */}
                 <motion.div
                     onHoverStart={() => handleHover(0)}

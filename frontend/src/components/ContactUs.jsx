@@ -90,7 +90,7 @@ function ContactUs() {
   };
 
   return (
-    <div className="w-full h-screen relative overflow-hidden">
+    <div id="contact-us" className="w-full h-screen relative overflow-hidden">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"

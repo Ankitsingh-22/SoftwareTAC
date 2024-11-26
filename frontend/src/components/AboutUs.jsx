@@ -6,7 +6,7 @@ import wbg from "../../assets/wbg.jpg";
 const AboutUsSection = () => {
   return (
     <section className="bg-black text-white py-16 px-6 relative overflow-hidden">
-      <div className="container mx-auto">
+      <div  className="container mx-auto">
   {/* Heading */}
   <h2 className="text-8xl font-bold mb-6 text-center bg-gradient-to-r from-blue-700 to-green-400 text-transparent bg-clip-text tracking-wider">
     ABOUT US
@@ -19,7 +19,7 @@ const AboutUsSection = () => {
           <Eyes />
         </div>
 
-        <div className="relative mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div  id="about-us" className="relative mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Our Mission Card - Left Side */}
           <div className=" top-0 left-0 z-10 p-8 bg-black  rounded-lg shadow-2xl flex flex-col items-start text-left w-full lg:w-3/4 mx-auto"  style={{
           backgroundImage: `url(${om})`, // Correct way to set the background image

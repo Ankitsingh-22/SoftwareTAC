@@ -1,21 +1,11 @@
-import React from 'react';
-import Headroom from 'react-headroom';
+import React from "react";
+import Headroom from "react-headroom";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 
 function Navbar() {
-    const handleScrollTo = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            console.warn(`Element with id '${id}' not found.`);
-        }
-    };
-
     return (
         <Headroom>
-            <div
-                className="w-full px-6 md:px-20 py-4 flex justify-between items-center bg-transparent shadow-md z-50"
-            >
+            <div className="w-full px-6 md:px-20 py-4 flex justify-between items-center bg-transparent shadow-md z-50">
                 {/* Logo */}
                 <div className="logo">
                     <svg
@@ -35,21 +25,24 @@ function Navbar() {
                 {/* Navigation Links */}
                 <div className="links cursor-pointer flex gap-6 md:gap-10">
                     {[
-                        { label: 'Home', id: 'home' },
-                        { label: 'Services', id: 'services' },
-                        { label: 'About Us', id: 'about-us' },
-                        { label: 'Work', id: 'work' },
-                        { label: 'Contact Us', id: 'contact-us' },
-                    ].map(({ label, id }, index) => (
-                        <span
+                        { label: "Home", to: "home" },
+                        { label: "Services", to: "services" },
+                        { label: "About Us", to: "about-us" },
+                        { label: "Work", to: "work" },
+                        { label: "Contact Us", to: "contact-us" },
+                    ].map(({ label, to }, index) => (
+                        <Link
                             key={index}
-                            onClick={() => handleScrollTo(id)}
+                            to={to} // Specify the section ID
+                            smooth={true} // Enable smooth scrolling
+                            duration={500} // Animation duration in milliseconds
+                            offset={-70} // Offset to account for the fixed header height
                             className="text-lg font-semibold relative group"
                         >
                             {label}
                             {/* Underline Hover Effect */}
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                        </span>
+                        </Link>
                     ))}
                 </div>
             </div>

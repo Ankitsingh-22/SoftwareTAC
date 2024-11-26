@@ -1,39 +1,31 @@
-import react from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Landing from './components/Landing'
-import Marque from './components/Marque'
-import About from './components/About'
-//import Eyes from './components/Eyes'
-import Feature from './components/Feature'
-//import Cards from './components/Cards.jsx'
-import Footer from './components/Footer.jsx'
-import LocomotiveScroll from 'locomotive-scroll';
-import ContactUs from './components/ContactUs.jsx'
-import AboutUsSection from './components/AboutUs.jsx'
-import TeamSection from './components/Team.jsx'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Landing from './components/Landing';
+import Marque from './components/Marque';
+import About from './components/About';
+import AboutUsSection from './components/AboutUs';
+import TeamSection from './components/Team';
+import Feature from './components/Feature';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
-  
   return (
-    <>
-    <div className="page text-white min-h-screen bg-zinc-900">
-      
-    <Navbar/>
-    <Landing />
-    <Marque />
-    <About />
-   
-    <AboutUsSection />
-    <TeamSection />
-    <Feature />
-   
-    <ContactUs />
-    <Footer/>
-    </div>
-    </>
-  )
+    <Router>
+      <div className="page text-white min-h-screen bg-zinc-900">
+        <Navbar />
+        <Landing />
+        <Marque />
+        <About />
+        <AboutUsSection />
+        <TeamSection />
+        <Feature />
+        <ContactUs />
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
