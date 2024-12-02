@@ -1,6 +1,9 @@
 import React from "react";
 import { FaGlobe, FaMobileAlt, FaRobot, FaTools } from "react-icons/fa";
 
+
+
+
 const SoftwareCompanyHomePage = () => {
   return (
     <div data-scroll data-scroll-speed=".06" className=" pt-30 bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen flex flex-col items-center px-6 py-12 rounded-t-3xl">

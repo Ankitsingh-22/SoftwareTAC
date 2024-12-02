@@ -111,7 +111,7 @@ const AboutSection = () => {
                 transition={{ duration: 0.3 }}
               >
                 <FaUserAlt size={20} className="text-indigo-500" />
-                <span className="text-sm sm:text-base">15+ Years of Experience</span>
+                <span className="text-sm sm:text-base">Gen Z Energy:</span>
               </motion.div>
               <motion.div
                 className="flex items-center space-x-2 text-base sm:text-lg about-card"
@@ -119,7 +119,7 @@ const AboutSection = () => {
                 transition={{ duration: 0.3 }}
               >
                 <FaAward size={20} className="text-teal-400" />
-                <span className="text-sm sm:text-base">Award-Winning Designs</span>
+                <span className="text-sm sm:text-base">Next-Level Creativity:</span>
               </motion.div>
               <motion.div
                 className="flex items-center space-x-2 text-base sm:text-lg about-card"
@@ -127,7 +127,7 @@ const AboutSection = () => {
                 transition={{ duration: 0.3 }}
               >
                 <FaCode size={20} className="text-orange-500" />
-                <span className="text-sm sm:text-base">Expert in Web Development</span>
+                <span className="text-sm sm:text-base">Tech-Savvy Team:</span>
               </motion.div>
             </div>
           </motion.div>

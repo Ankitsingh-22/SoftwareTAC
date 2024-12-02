@@ -81,7 +81,7 @@ function ContactUs() {
       <div className="relative z-10 max-w-5xl w-full space-y-8 md:space-y-0 md:grid md:grid-cols-2 gap-8">
         {/* Contact Form */}
         <div
-          id="contact-us"
+          id="contact"
           className="bg-gray-800 bg-opacity-90 p-6 sm:p-8 md:p-10 m-5 rounded-lg shadow-xl space-y-6 transition-transform transform hover:scale-105"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center animate__animated animate__fadeIn animate__delay-1s">
@@ -159,21 +159,21 @@ function ContactUs() {
           <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-8 animate__animated animate__fadeIn animate__delay-1s">
             Contact Us
           </h2>
-          <div className="flex items-center space-x-4 hover:bg-teal-600 rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
+          <div className="flex items-center space-x-4 rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
             <FaMapMarkerAlt className="text-teal-400 text-3xl" />
             <div>
               <h3 className="text-xl font-bold text-teal-400">Address</h3>
               <p className="text-gray-300 text-center md:text-left">1234 Street Name, City, Country</p>
             </div>
           </div>
-          <div className="flex items-center space-x-4 hover:bg-teal-600 rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
+          <div className="flex items-center space-x-4  rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
             <FaWhatsapp className="text-green-400 text-3xl" />
             <div>
               <h3 className="text-xl font-bold text-teal-400">WhatsApp</h3>
               <p className="text-gray-300 text-center md:text-left">+123 456 7890</p>
             </div>
           </div>
-          <div className="flex items-center space-x-4 hover:bg-teal-600 rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
+          <div className="flex items-center space-x-4 rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
             <FaEnvelope className="text-blue-400 text-3xl" />
             <div>
               <h3 className="text-xl font-bold text-teal-400">Email</h3>
