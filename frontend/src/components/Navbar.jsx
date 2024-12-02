@@ -51,7 +51,7 @@ function Navbar() {
                         <FiX />
                     </button>
 
-                    <div className="flex flex-col items-center gap-8 mt-16 md:mt-0 md:flex-row md:items-center md:gap-6">
+                   <div className="flex flex-col items-center w-full bg-gray-900 bg-opacity-30 backdrop-blur-md shadow-lg gap-8 mt-16 md:mt-0 md:flex-row md:items-center md:gap-6 md:bg-transparent md:backdrop-blur-none md:shadow-none">
                         {[
                             { label: "Home", to: "home" },
                             { label: "Services", to: "services" },
