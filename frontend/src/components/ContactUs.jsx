@@ -10,7 +10,7 @@ function ContactUs() {
     email: "",
     phoneNumber: "",
     message: "",
-    serviceType: "", // Added serviceType for the dropdown
+    service: "", // Added service for the dropdown
   });
   const [error, setError] = useState(null);
   const [showDialog, setShowDialog] = useState(false);
@@ -48,7 +48,7 @@ function ContactUs() {
       return;
     }
 
-    if (!formData.serviceType) {
+    if (!formData.service) {
       setError("Please select a service type.");
       setLoading(false);
       return;
@@ -57,7 +57,7 @@ function ContactUs() {
     try {
       await axios.post(`${apiUrl}/api/contact`, formData);
       setShowDialog(true);
-      setFormData({ name: "", email: "", phoneNumber: "", message: "", serviceType: "" });
+      setFormData({ name: "", email: "", phoneNumber: "", message: "", service: "" });
     } catch (error) {
       setError(
         error.response?.data?.error || "An error occurred. Please try again later."
@@ -130,8 +130,8 @@ function ContactUs() {
             <div>
               <label className="block text-teal-400 font-bold mb-2">What service are you looking for?</label>
               <select
-                name="serviceType"
-                value={formData.serviceType}
+                name="service"
+                value={formData.service}
                 onChange={handleChange}
                 className="w-full p-3 sm:p-4 rounded-lg bg-gray-700 focus:ring-2 focus:ring-teal-400 text-gray-200"
               >

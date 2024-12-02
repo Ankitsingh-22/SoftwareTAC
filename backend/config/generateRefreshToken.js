@@ -12,18 +12,23 @@ const oAuth2Client = new google.auth.OAuth2(
 );
 
 {
-  /*  // Generate the URL to request user authorization
-const authUrl = oAuth2Client.generateAuthUrl({
+  /* 
+{
+    // Generate the URL to request user authorization
+
+  const authUrl = oAuth2Client.generateAuthUrl({
   access_type: "offline",
   scope: ["https://mail.google.com/"],
   prompt: "consent",
 });
 
-console.log("Authorize this app by visiting this url:", authUrl);  */
+console.log("Authorize this app by visiting this url:", authUrl);  
+}
+*/
 }
 
 const code =
-  "4/0AeanS0Y2eWKENrep5CZ3MrgOWVokP3W81QuDztrI_qcj_orrH7eQNODfCWW15Ne7oSPcdw"; // Replace this with your actual authorization code
+  "4/0AeanS0ZrW468MWAOoAARDk6dXmWLPi7Rn5fvH46VU6oLLUHfiKo5npg2UYPHyHQEBnpJzg"; // Replace this with your actual authorization code
 
 async function getNewRefreshToken() {
   try {

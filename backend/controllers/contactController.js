@@ -12,15 +12,15 @@ const {
 
 // Submit Contact Form
 const submitContactForm = async (req, res) => {
-  const { name, email, phoneNumber, message } = req.body;
+  const { name, email, phoneNumber, message, service } = req.body;
 
-  if (!name || !email || !phoneNumber || !message) {
+  if (!name || !email || !phoneNumber || !message || !service) {
     return res.status(400).json({ error: "All fields are required" });
   }
 
   try {
     // Save contact form details in MongoDB
-    const contact = new Contact({ name, email, phoneNumber, message });
+    const contact = new Contact({ name, email, phoneNumber, message, service });
     await contact.save();
 
     // Nodemailer transporter
@@ -50,6 +50,7 @@ const submitContactForm = async (req, res) => {
           <li><strong>Email:</strong> ${email}</li>
           <li><strong>Phone Number:</strong> ${phoneNumber}</li>
           <li><strong>Message:</strong> ${message}</li>
+          <li><strong>Service:</strong> ${service}</li>
         </ul>
         <p>Please respond to the inquiry promptly.</p>
         <p>Best regards,<br/>TalentConnect</p>
