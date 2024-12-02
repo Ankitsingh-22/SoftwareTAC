@@ -45,7 +45,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to="about"
+                  to="about-us"
                   smooth={true}
                   duration={500}
                   className="hover:text-blue-500 transition-colors duration-300 ease-in-out cursor-pointer"
@@ -55,7 +55,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to="work"
+                  to="featured"
                   smooth={true}
                   duration={500}
                   className="hover:text-blue-500 transition-colors duration-300 ease-in-out cursor-pointer"

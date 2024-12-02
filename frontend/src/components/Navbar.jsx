@@ -56,8 +56,8 @@ function Navbar() {
                             { label: "Home", to: "home" },
                             { label: "Services", to: "services" },
                             { label: "About Us", to: "about-us" },
-                            { label: "Work", to: "work" },
-                            { label: "Contact Us", to: "contact-us" },
+                            { label: "Work", to: "featured" },
+                            { label: "Contact Us", to: "contact" },
                         ].map(({ label, to }, index) => (
                             <Link
                                 key={index}

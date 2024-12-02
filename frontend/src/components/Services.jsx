@@ -57,7 +57,7 @@ const DynamicScrollPage = () => {
             Create stunning, responsive, and user-friendly websites with cutting-edge technologies.
           </p>
           {/* Extra Text */}
-          <div className="extra-text hidden">
+          <div className="extra-text" style={{ opacity: 0 }}>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6">
               We design websites that don’t just look good—they slay. Whether you’re building an e-commerce empire or showcasing your brand, we make sure your site is fire, fast, and future-ready.
             </p>
@@ -94,9 +94,9 @@ const DynamicScrollPage = () => {
             Build powerful and scalable applications tailored to your unique requirements.
           </p>
           {/* Extra Text */}
-          <div className="extra-text hidden">
+          <div className="extra-text" style={{ opacity: 0 }}>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6">
-              Our application development team ensures smooth, seamless, and secure apps that enhance business efficiency.
+            From concept to app store, we craft apps that vibe with your audience. Think smooth, functional, and scroll-stopping—everything you need to keep your users hooked.
             </p>
           </div>
           <button
@@ -131,9 +131,9 @@ const DynamicScrollPage = () => {
             Leverage artificial intelligence to revolutionize processes and unlock innovation.
           </p>
           {/* Extra Text */}
-          <div className="extra-text hidden">
+          <div className="extra-text" style={{ opacity: 0 }}>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6">
-              AI integration can help streamline your operations, provide actionable insights, and improve customer experiences.
+            AI is the real MVP. Automate the boring stuff, personalize like a pro, and make smarter decisions with custom AI solutions tailored to your goals.
             </p>
           </div>
           <button
