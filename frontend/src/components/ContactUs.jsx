@@ -159,25 +159,25 @@ function ContactUs() {
           <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-8 animate__animated animate__fadeIn animate__delay-1s">
             Contact Us
           </h2>
-          <div className="flex items-center space-x-4 rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
+          <div className="flex items-center space-x-4 sm:flex-wrap rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center lg:justify-start">
             <FaMapMarkerAlt className="text-teal-400 text-3xl" />
             <div>
               <h3 className="text-xl font-bold text-teal-400">Address</h3>
-              <p className="text-gray-300 text-center md:text-left">1234 Street Name, City, Country</p>
+              <p className="text-gray-300 text-center md:text-left">Bengaluru,Karnataka.</p>
             </div>
           </div>
           <div className="flex items-center space-x-4  rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
             <FaWhatsapp className="text-green-400 text-3xl" />
             <div>
               <h3 className="text-xl font-bold text-teal-400">WhatsApp</h3>
-              <p className="text-gray-300 text-center md:text-left">+123 456 7890</p>
+              <p className="text-gray-300 text-center md:text-left">(+91) 99999-99999</p>
             </div>
           </div>
           <div className="flex items-center space-x-4 rounded-lg p-4 transition duration-300 ease-in-out w-full justify-center md:justify-start">
             <FaEnvelope className="text-blue-400 text-3xl" />
             <div>
               <h3 className="text-xl font-bold text-teal-400">Email</h3>
-              <p className="text-gray-300 text-center md:text-left">contact@company.com</p>
+              <p className="text-gray-300 text-center md:text-left">contact@mail.com</p>
             </div>
           </div>
         </div>

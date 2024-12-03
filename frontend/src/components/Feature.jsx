@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa"; // Importing the arrow icon from react-icons
-import wbg from "../../assets/web.mp4";
+import wbg from "../../assets/webt.mp4";
 
 function Featured() {
   const [inView, setInView] = useState(false);

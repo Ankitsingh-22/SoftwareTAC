@@ -103,10 +103,10 @@ const AboutSection = () => {
               experiences.
             </p>
 
-            <div className="flex flex-wrap justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
+            <div className="flex flex-wrap flex-col sm:flex-row  justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
               {/* Experience Points (15+ Years, Award-Winning Designs, Expert in Web Development) */}
               <motion.div
-                className="flex items-center space-x-2 text-base sm:text-lg about-card"
+                className="flex flex-col sm:flex-row items-center space-x-2 text-base sm:text-lg about-card"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
@@ -114,7 +114,7 @@ const AboutSection = () => {
                 <span className="text-sm sm:text-base">Gen Z Energy:</span>
               </motion.div>
               <motion.div
-                className="flex items-center space-x-2 text-base sm:text-lg about-card"
+                className="flex flex-col sm:flex-row  items-center space-x-2 text-base sm:text-lg about-card"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
@@ -122,7 +122,7 @@ const AboutSection = () => {
                 <span className="text-sm sm:text-base">Next-Level Creativity:</span>
               </motion.div>
               <motion.div
-                className="flex items-center space-x-2 text-base sm:text-lg about-card"
+                className="flex flex-col sm:flex-row items-center space-x-2 text-base sm:text-lg about-card"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
@@ -134,7 +134,7 @@ const AboutSection = () => {
 
           {/* Right Column - Image/Illustration */}
           <motion.div
-            className="sm:w-1/2 flex justify-center about-image"
+            className="sm:w-1/2 flex-1 justify-center about-image"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}

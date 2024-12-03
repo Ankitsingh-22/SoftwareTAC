@@ -26,7 +26,6 @@ function App() {
       
     <Navbar/>
     <Landing />
-    <Marque />
     <About />
     <Services />
     <New />
@@ -34,6 +33,7 @@ function App() {
     <AboutUsSection />
     <Feature />
    
+    <Marque />
     <ContactUs />
     <Footer/>
     </div>

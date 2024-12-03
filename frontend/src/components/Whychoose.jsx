@@ -39,6 +39,9 @@ const WhyOurCompany = () => {
 
   return (
     <section
+      data-scroll
+      data-scroll-speed="-0.3"
+
       className={`flex flex-col md:flex-row items-center justify-between px-6 sm:px-12 md:px-24 lg:px-24 py-12 sm:py-20 md:py-24 text-gray-800 relative overflow-hidden transition-all duration-500 ease-in-out gap-8 md:gap-10 rounded-t-3xl ${features[activeFeature].bgColor}`}
     >
       {/* Left Section (Content separated from image) */}
@@ -66,8 +69,8 @@ const WhyOurCompany = () => {
             >
               <span
                 className={`p-3 rounded-full text-xs transition-all duration-300 ${activeFeature === key
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-300 text-gray-600"
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-300 text-gray-600"
                   }`}
               >
                 {key === "SEO" && <FaSearch />}
