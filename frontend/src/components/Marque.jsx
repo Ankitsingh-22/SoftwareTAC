@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-scroll";  // Import Link from react-router-dom
 
 function Marque() {
   return (
@@ -19,14 +20,13 @@ function Marque() {
             display: flex;
             animation: marquee 30s linear infinite;
           }
-
         `}
       </style>
 
       <div
         data-scroll
         data-scroll-speed="-0.1"
-        className="w-full py-12 pb-20 -mb-20 rounded-t-3xl overflow-hidden relative bg-teal-900"
+        className="w-full py-12 pb-20 -mb-20  overflow-hidden relative bg-teal-900"
       >
         {/* Top Decorative Line */}
         <div className="relative z-10">
@@ -42,13 +42,14 @@ function Marque() {
         <div className="relative z-10 flex overflow-hidden whitespace-nowrap py-6">
           <div className="flex animate-marquee whitespace-nowrap">
             {[...Array(8)].map((_, i) => (
-              <h1
+              <Link
                 key={i}
+                to="contact"  // Make each marquee text a link to the contact page
                 className="marquee-text text-[8vw] lg:text-[6vw] font-semibold tracking-tight leading-none px-10 text-white"
               >
                 BUILDING YOUR DIGITAL{" "}
                 <span className="text-indigo-400">FUTURE</span>
-              </h1>
+              </Link>
             ))}
           </div>
         </div>

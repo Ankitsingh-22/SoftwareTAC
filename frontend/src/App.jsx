@@ -26,14 +26,14 @@ function App() {
       
     <Navbar/>
     <Landing />
-    <Marque />
+   
     <About />
     <Services />
     <New />
    
     <AboutUsSection />
     <Feature />
-   
+    <Marque />
     <ContactUs />
     <Footer/>
     </div>

@@ -1,76 +1,7 @@
-import React, { useEffect } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import { FaUserAlt, FaAward, FaCode } from "react-icons/fa";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
-  useEffect(() => {
-    // GSAP ScrollTrigger for Animating Text and Image on Scroll
-    gsap.fromTo(
-      ".about-text",
-      {
-        opacity: 0,
-        y: 100,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".about-text",
-          start: "top 80%",
-          end: "bottom 60%",
-          scrub: true,
-          markers: false,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      ".about-image",
-      {
-        opacity: 0,
-        scale: 0.8,
-      },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".about-image",
-          start: "top 80%",
-          end: "bottom 60%",
-          scrub: true,
-          markers: false,
-        },
-      }
-    );
-
-    gsap.fromTo(
-      ".about-card",
-      {
-        opacity: 0,
-        x: -100,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: ".about-card",
-          start: "top 80%",
-          end: "bottom 60%",
-          scrub: true,
-          markers: false,
-        },
-      }
-    );
-  }, []);
-
   return (
     <section className="about-section bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white py-12 sm:py-20 relative">
       {/* Background Animations */}
@@ -88,12 +19,7 @@ const AboutSection = () => {
       <div id="about-us" className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row items-center justify-between space-y-12 sm:space-y-0">
           {/* Left Column - Text Content */}
-          <motion.div
-            className="sm:w-1/2 text-center sm:text-left space-y-6 about-text"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
-          >
+          <div className="sm:w-1/2 text-center sm:text-left space-y-6 about-text">
             <h2 className="text-3xl sm:text-5xl font-extrabold leading-tight text-indigo-400">
               Who We Are
             </h2>
@@ -105,46 +31,29 @@ const AboutSection = () => {
 
             <div className="flex flex-wrap justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
               {/* Experience Points (15+ Years, Award-Winning Designs, Expert in Web Development) */}
-              <motion.div
-                className="flex items-center space-x-2 text-base sm:text-lg about-card"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              >
+              <div className="flex items-center space-x-2 text-base sm:text-lg about-card">
                 <FaUserAlt size={20} className="text-indigo-500" />
                 <span className="text-sm sm:text-base">Gen Z Energy:</span>
-              </motion.div>
-              <motion.div
-                className="flex items-center space-x-2 text-base sm:text-lg about-card"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              >
+              </div>
+              <div className="flex items-center space-x-2 text-base sm:text-lg about-card">
                 <FaAward size={20} className="text-teal-400" />
                 <span className="text-sm sm:text-base">Next-Level Creativity:</span>
-              </motion.div>
-              <motion.div
-                className="flex items-center space-x-2 text-base sm:text-lg about-card"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              >
+              </div>
+              <div className="flex items-center space-x-2 text-base sm:text-lg about-card">
                 <FaCode size={20} className="text-orange-500" />
                 <span className="text-sm sm:text-base">Tech-Savvy Team:</span>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Column - Image/Illustration */}
-          <motion.div
-            className="sm:w-1/2 flex justify-center about-image"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
+          <div className="sm:w-1/2 flex justify-center about-image">
             <img
               src="https://i.postimg.cc/bNxrXKqy/rb-2149365021.png"
               alt="About Us"
               className="w-56 sm:w-64 md:w-80 h-auto transform hover:scale-105 transition-all duration-500 ease-in-out rounded-lg"
             />
-          </motion.div>
+          </div>
         </div>
 
         {/* Cards Section */}

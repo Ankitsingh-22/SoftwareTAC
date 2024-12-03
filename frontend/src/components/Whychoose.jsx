@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { motion } from "framer-motion"; // Import Framer Motion for smooth animations
 import { FaSearch, FaChartLine, FaPalette } from "react-icons/fa"; // Import React Icons
@@ -39,7 +40,7 @@ const WhyOurCompany = () => {
 
   return (
     <section
-      className={`flex flex-col md:flex-row items-center justify-between px-6 sm:px-12 md:px-24 lg:px-24 py-12 sm:py-20 md:py-24 text-gray-800 relative overflow-hidden transition-all duration-500 ease-in-out gap-8 md:gap-10 rounded-t-3xl ${features[activeFeature].bgColor}`}
+      className={`flex flex-col md:flex-row items-center justify-between px-6 sm:px-12 md:px-24 lg:px-24 py-12 sm:py-20 md:py-24 text-gray-800 relative overflow-hidden transition-all duration-500 ease-in-out gap-8 md:gap-10 ${features[activeFeature].bgColor}`}
     >
       {/* Left Section (Content separated from image) */}
       <div className="flex-1 space-y-6 text-center md:text-left">
