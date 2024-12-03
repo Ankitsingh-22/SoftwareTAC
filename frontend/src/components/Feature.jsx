@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa"; // Importing the arrow icon from react-icons
-import wbg from "../../assets/Website.mp4";
+import wbg from "../../assets/web.mp4";
 
 function Featured() {
   const [inView, setInView] = useState(false);
@@ -92,13 +92,14 @@ function Featured() {
         >
           {/* Replacing Image with Video */}
           <motion.video
-            className="rounded-lg object-cover w-full h-full"
+            className="absolute top-0 left-0 w-full h-full object-cover"
             src={wbg}
             autoPlay
             loop
             muted
             playsInline
           />
+
           {/* Project Title */}
           <motion.h1
             className="absolute left-1/2 -translate-x-1/2 top-3/4 text-teal-500 z-10 leading-none tracking-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold"

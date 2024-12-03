@@ -32,7 +32,16 @@ const SoftwareCompanyHomePage = () => {
           <p className="text-sm text-gray-400">
             Build modern, responsive designs that provide a seamless experience across devices.
           </p>
-          <button className="mt-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-110 hover:shadow-lg">
+          <button
+           onClick={() => {
+            const element = document.getElementById("contact");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            } else {
+              console.error("Contact section not found!");
+            }
+          }}
+          className="mt-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-110 hover:shadow-lg  cursor-pointer">
             Learn More
           </button>
           {/* Background animation */}
