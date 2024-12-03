@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa"; // Importing the arrow icon from react-icons
-import wbg from "../../assets/Website.mp4";
+import wbg from "../../assets/webt.mp4";
 
 function Featured() {
   return (
@@ -31,6 +31,7 @@ function Featured() {
             muted
             playsInline
           />
+
           {/* Project Title */}
           
         </div>

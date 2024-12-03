@@ -29,17 +29,29 @@ const AboutSection = () => {
               experiences.
             </p>
 
-            <div className="flex flex-wrap justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
+            <div className="flex flex-wrap flex-col sm:flex-row  justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
               {/* Experience Points (15+ Years, Award-Winning Designs, Expert in Web Development) */}
-              <div className="flex items-center space-x-2 text-base sm:text-lg about-card">
+              <motion.div
+                className="flex items-center space-x-2 text-base sm:text-lg about-card"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+              >
                 <FaUserAlt size={20} className="text-indigo-500" />
                 <span className="text-sm sm:text-base">Gen Z Energy:</span>
-              </div>
-              <div className="flex items-center space-x-2 text-base sm:text-lg about-card">
+              </motion.div>
+              <motion.div
+                className="flex items-center space-x-2 text-base sm:text-lg about-card"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+              >
                 <FaAward size={20} className="text-teal-400" />
                 <span className="text-sm sm:text-base">Next-Level Creativity:</span>
-              </div>
-              <div className="flex items-center space-x-2 text-base sm:text-lg about-card">
+              </motion.div>
+              <motion.div
+                className="flex items-center space-x-2 text-base sm:text-lg about-card"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+              >
                 <FaCode size={20} className="text-orange-500" />
                 <span className="text-sm sm:text-base">Tech-Savvy Team:</span>
               </div>
@@ -47,7 +59,12 @@ const AboutSection = () => {
           </div>
 
           {/* Right Column - Image/Illustration */}
-          <div className="sm:w-1/2 flex justify-center about-image">
+          <motion.div
+            className="sm:w-1/2 flex justify-center about-image"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
             <img
               src="https://i.postimg.cc/bNxrXKqy/rb-2149365021.png"
               alt="About Us"

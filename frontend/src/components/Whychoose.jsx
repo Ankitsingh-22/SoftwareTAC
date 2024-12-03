@@ -67,8 +67,8 @@ const WhyOurCompany = () => {
             >
               <span
                 className={`p-3 rounded-full text-xs transition-all duration-300 ${activeFeature === key
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-300 text-gray-600"
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-300 text-gray-600"
                   }`}
               >
                 {key === "SEO" && <FaSearch />}
