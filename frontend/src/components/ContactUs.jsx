@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 
-const apiUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
 function ContactUs() {
   const [formData, setFormData] = useState({
