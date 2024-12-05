@@ -91,10 +91,7 @@ function ContactUs() {
       {/* Main Content */}
       <div className="relative z-10 max-w-5xl w-full space-y-8 md:space-y-0 md:grid md:grid-cols-2 gap-8">
         {/* Contact Form */}
-        <div
-          id="contact"
-          className="bg-gray-800 bg-opacity-90 p-8 sm:p-12 md:p-8 m-5 rounded-lg shadow-xl space-y-6 transition-transform transform"
-        >
+        <div className="bg-gray-800 bg-opacity-90 p-8 sm:p-12 md:p-8 m-5 rounded-lg shadow-xl space-y-6 transition-transform transform">
           <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center">
             Get In Touch With Us
           </h2>
@@ -215,8 +212,32 @@ function ContactUs() {
             </div>
           </div>
         </div>
-
       </div>
+
+      {/*Success Dialog Box */}
+
+      {showDialog && (
+          <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-start pt-20 z-50">
+            <div className="max-w-md bg-gradient-to-r from-teal-400 to-blue-500 text-center rounded-lg shadow-lg relative w-full mx-4 p-6">
+              <button
+                className="absolute top-2 right-2 text-gray-800 hover:text-red-600 transition"
+                onClick={closeDialog}
+              >
+                &times;
+              </button>
+              <h1 className="text-xl font-bold text-gray-900 mb-4">
+                Thank you! Our team will contact you shortly.
+              </h1>
+              <button
+                className="bg-teal-500 text-white px-6 py-2 rounded-lg hover:bg-teal-600 transition"
+                onClick={closeDialog}
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        )}
+
     </div>
   );
 }
