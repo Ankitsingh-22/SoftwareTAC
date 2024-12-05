@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 
-const apiUrl = import.meta.env.VITE_API_BASE_URL;
+const apiUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -81,7 +81,7 @@ function ContactUs() {
   const closeDialog = () => setShowDialog(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-100 flex items-center justify-center relative px-4 sm:px-8 lg:px-16">
+    <div  className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-100 flex items-center justify-center relative px-4 sm:px-8 lg:px-16">
       {/* Background Animations */}
       <div className="absolute inset-0 overflow-hidden z-0">
         <div className="absolute w-72 h-72 bg-gradient-to-br from-pink-500 to-purple-500 blur-3xl opacity-40 rounded-full top-10 left-10 animate-pulse"></div>
