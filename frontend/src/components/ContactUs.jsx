@@ -91,7 +91,7 @@ function ContactUs() {
       {/* Main Content */}
       <div className="relative z-10 max-w-5xl w-full space-y-8 md:space-y-0 md:grid md:grid-cols-2 gap-8">
         {/* Contact Form */}
-        <div className="bg-gray-800 bg-opacity-90 p-8 sm:p-12 md:p-8 m-5 rounded-lg shadow-xl space-y-6 transition-transform transform">
+        <div  id="contact" className="bg-gray-800 bg-opacity-90 p-8 sm:p-12 md:p-8 m-5 rounded-lg shadow-xl space-y-6 transition-transform transform">
           <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center">
             Get In Touch With Us
           </h2>
